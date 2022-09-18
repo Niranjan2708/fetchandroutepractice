@@ -1,0 +1,34 @@
+.blog-details-container {
+  margin: 50px;
+}
+.blog-title {
+  text-align: center;
+  font-size: 40px;
+}
+.blog-avatar {
+  width: 40px;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 30px;
+}
+.blog-image {
+  width: 100%;
+}
+.image {
+  height: 60vh;
+}
+.author-info {
+  margin-bottom: 20px;
+}
+.blog-author {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  font-family: 'Roboto';
+}
+.blog-content {
+  color: #8e8e8e;
+  font-family: 'Roboto';
+  font-size: 20px;
+}

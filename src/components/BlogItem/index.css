@@ -1,0 +1,55 @@
+.blog-container {
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  border-radius: 7px;
+  border: 2px solid #d3d3d3;
+}
+@media screen and (max-width: 767px) {
+  .image {
+    width: 100vw;
+  }
+  .blog-container {
+    flex-direction: column;
+  }
+}
+.user-info {
+  padding-top: 14px;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+.Link {
+  text-decoration: none;
+}
+.topic {
+  color: #8e8e8e;
+  font-size: 21px;
+  font-family: 'Roboto';
+}
+.author {
+  color: #8e8e8e;
+  padding-left: 10px;
+  font-size: 21px;
+  font-family: 'Roboto';
+}
+.image {
+  width: 40%;
+  padding-top: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+.author-info {
+  display: flex;
+  padding-top: 12px;
+}
+.img {
+  width: 100%;
+  border-radius: 7px;
+}
+.avatar {
+  height: 50px;
+  border-radius: 40px;
+  width: 50px;
+}
