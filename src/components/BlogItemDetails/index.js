@@ -22,8 +22,8 @@ class BlogItemDetails extends Component {
     const updatedData = {
       id: data.id,
       title: data.title,
-      image: data.image,
-      avatar: data.avatar,
+      imageUrl: data.image_url,
+      avatarUrl: data.avatar_url,
       content: data.content,
       author: data.author,
     }
@@ -32,7 +32,7 @@ class BlogItemDetails extends Component {
 
   renderBlogDetails = () => {
     const {blogData} = this.state
-    const {id, title, image, avatar, content, author} = blogData
+    const {title, imageUrl, avatarUrl, content, author} = blogData
     return (
       <div>
         <div className="blog-details-container">
@@ -42,7 +42,7 @@ class BlogItemDetails extends Component {
             <p className="blog-author">{author}</p>
           </div>
           <div className="blog-image">
-            <img src={imageUrl} className="image" alt="image" />
+            <img src={imageUrl} alt="img" className="blog-image" />
           </div>
           <p className="blog-content">{content}</p>
         </div>
@@ -55,7 +55,7 @@ class BlogItemDetails extends Component {
     return (
       <div>
         {isLoading ? (
-          <div testid="loader">
+          <div>
             <Loader type="TailSpin" color="#00bfff" />
           </div>
         ) : (
